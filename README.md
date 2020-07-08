@@ -1,0 +1,1 @@
+# sd-0x-mysql-vocabulary-booster
