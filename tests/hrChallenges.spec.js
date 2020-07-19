@@ -48,4 +48,13 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Exiba os cargos com a diferença entre seus salários máximo e mínimo', () => {
+    it('Verifica o desafio 3', async () => {
+      const challengeQuery = readFileSync('desafio3.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult3');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
 });

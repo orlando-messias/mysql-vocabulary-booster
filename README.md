@@ -100,9 +100,16 @@ Com base em todos os cargos presentes, queremos categorizar o nível de remunera
 
 Os resultados devem estar ordenados pelo nome do cargo em ordem alfabética.
 
-3. Usando o banco `hr`, crie uma query que exiba o `job_title` de todos os cargos registrados na tabela `jobs`. A segunda coluna deve exibir a diferença média entre o salário mínimo e o salário máximo de todos os registros da tabela `jobs` e deve ser apelidada de "Diferença média entre salários mínimos e máximos". Todos os resultados devem estar agrupados por `job_title`. Sua query deve estar ordenada pela média que foi calculada, produzindo exatos 19 resultados.
+### Desafio 3
 
-    ![test3](images/test3.png)
+Usando o banco `hr` como referência, crie uma query que exiba duas colunas:
+
+1. A primeira coluna deve possuir o alias "**Cargo**" e exibir o nome do cargo.
+
+2. A segunda coluna deve possuir o alias "**Diferença entre salários máximo e mínimo**" e exibir a diferença entre os salários máximo e mínimo para o cargo em questão.
+
+Os resultados devem estar ordenados pela diferença entre salários máximo e mínimo em ordem crescente. Em caso de empate nessa diferença os resultados devem ser ordenados pelo nome do cargo em ordem alfabética.
+
 
 4. Monte uma query usando a tabela `employees` do banco `hr` que exiba três colunas: o `job_id`, com o apelido de "Código do Cargo", a **média salarial** de categoria, com o apelido de "Média" e por fim, a **classificação de cada categoria em nível de senioridade**, com o apelido de "Senioridade", de acordo com a tabela abaixo. Seus resultados devem ser ordenados em ordem crescente usando a média salarial. Considere que os salários mínimo e máximo da tabela `jobs` são salários anuais.
 
