@@ -72,9 +72,16 @@ SELECT * FROM w3schools.customers;
 
 ## Desafios SQL
 
-1. Foi decidido que vamos continuar atendendo apenas à região 1. Sendo assim, usando a tabela `countries` do banco `hr` como referência, precisamos de um relatório em que deve ser exibido o nome do país na coluna `country_name` e uma segunda coluna apelidada de `Status Inclusão`, que exibirá o status do país. Essa segunda coluna deve ser gerada com base no valor da coluna `region_id` e seu valor deve ser "incluído" ou "não incluído". Utilize os comandos condicionais `IF` ou `CASE` para gerar exatamente 25 resultados, como na imagem a seguir:
+### Desafio 1
 
-    ![test1](images/test1.png)
+Foi decidido que vamos continuar atendendo apenas à região `"Europa"`. Sendo assim, usando o banco `hr` como referência, precisamos de um relatório que deve apresentar duas colunas:
+
+1. A primeira coluna deve possuir o alias "**País**" e exibir o nome do país.
+
+2. A segunda coluna deve possuir o alias "**Status Inclusão**" e deve exibir `"incluído"` se o país em questão está incluso na `"Europa"`, ou `"não incluído"`, caso contrário.
+
+Os resultados devem estar ordenados pelo nome do país em ordem alfabética.
+
 
 2. Queremos categorizar o nível de cada cargo por salário. Através do uso de condicionais, monte uma query que exiba, utilizando a tabela `jobs` do banco `hr`, primeiramente o `job_title` e, em uma segunda coluna, o nível do salário de acordo com a informação de `max_salary`, apelidando essa coluna de "Nível". Categorize os níveis de remuneração de acordo com a tabela abaixo. Sua query deve produzir 19 resultados, e as colunas devem ser nomeadas assim como na imagem de referência:
 
