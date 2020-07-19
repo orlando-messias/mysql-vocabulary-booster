@@ -82,18 +82,23 @@ Foi decidido que vamos continuar atendendo apenas à região `"Europa"`. Sendo a
 
 Os resultados devem estar ordenados pelo nome do país em ordem alfabética.
 
+### Desafio 2
 
-2. Queremos categorizar o nível de cada cargo por salário. Através do uso de condicionais, monte uma query que exiba, utilizando a tabela `jobs` do banco `hr`, primeiramente o `job_title` e, em uma segunda coluna, o nível do salário de acordo com a informação de `max_salary`, apelidando essa coluna de "Nível". Categorize os níveis de remuneração de acordo com a tabela abaixo. Sua query deve produzir 19 resultados, e as colunas devem ser nomeadas assim como na imagem de referência:
+Com base em todos os cargos presentes, queremos categorizar o nível de remuneração de cada cargo. Utilizando o banco `hr` como referência, seu relatório deve possuir as seguintes colunas:
 
-    5000 - 10000 - Baixo
+1. A primeira coluna deve possuir o alias "**Cargo**" e exibir o nome do cargo.
 
-    10001 - 20000 - Médio
+2. A segunda coluna deve possuir o alias "**Nível**" e exibir o nível de remuneração do cargo com base no seu **salário máximo**, categorizando os níveis de remuneração da seguinte forma:
 
-    20001 - 30000 - Alto
+    Salário máximo entre 5000 e 10000 -> Baixo
 
-    Acima de 30000 - Altíssimo
+    Salário máximo entre 10001 e 20000 -> Médio
 
-    ![test2](images/test2.png)
+    Salário máximo entre 20001 e 30000 -> Alto
+
+    Salário máximo acima de 30000 -> Altíssimo
+
+Os resultados devem estar ordenados pelo nome do cargo em ordem alfabética.
 
 3. Usando o banco `hr`, crie uma query que exiba o `job_title` de todos os cargos registrados na tabela `jobs`. A segunda coluna deve exibir a diferença média entre o salário mínimo e o salário máximo de todos os registros da tabela `jobs` e deve ser apelidada de "Diferença média entre salários mínimos e máximos". Todos os resultados devem estar agrupados por `job_title`. Sua query deve estar ordenada pela média que foi calculada, produzindo exatos 19 resultados.
 
