@@ -110,18 +110,27 @@ Usando o banco `hr` como referência, crie uma query que exiba duas colunas:
 
 Os resultados devem estar ordenados pela diferença entre salários máximo e mínimo em ordem crescente. Em caso de empate nessa diferença os resultados devem ser ordenados pelo nome do cargo em ordem alfabética.
 
+### Desafio 4
 
-4. Monte uma query usando a tabela `employees` do banco `hr` que exiba três colunas: o `job_id`, com o apelido de "Código do Cargo", a **média salarial** de categoria, com o apelido de "Média" e por fim, a **classificação de cada categoria em nível de senioridade**, com o apelido de "Senioridade", de acordo com a tabela abaixo. Seus resultados devem ser ordenados em ordem crescente usando a média salarial. Considere que os salários mínimo e máximo da tabela `jobs` são salários anuais.
+Usando o banco `hr` como referência, queremos extrair informações a respeito **dos salários das pessoas empregadas**. Para isso, crie uma query que exiba três colunas:
 
-    Média entre 2000 - 5800 -> 'Junior'
+1. A primeira coluna deve possuir o alias "**Cargo**" e exibir o nome do cargo.
 
-    Média entre 5801 - 7500 -> 'Pleno'
+2. A segunda coluna deve possuir o alias "**Média salarial**" e exibir a média dos salários das pessoas empregadas que possuem o cargo em questão.
 
-    Média entre 7501 - 10500 -> 'Sênior'
+3. A terceira coluna deve possuir o alias "**Salarial**" e categorizar o nível de senioridade do cargo com base na média salarial, da seguinte forma:
 
-    Média acima de 10500 -> 'CEO'
+    Média salarial entre 2000 - 5800 -> 'Júnior'
 
-    ![test4](images/test4.png)
+    Média salarial entre 5801 - 7500 -> 'Pleno'
+
+    Média salarial entre 7501 - 10500 -> 'Sênior'
+
+    Média salarial acima de 10500 -> 'CEO'
+
+Devido ao fato de a média salarial ser um valor monetário, sempre que for fazer uso da média salarial, é preciso arredondá-la usando apenas duas casas decimais.
+
+Os resultados devem estar ordenados pela média salarial em ordem crescente. Em caso de empate na média, os resultados devem ser ordenados pelo nome do cargo em ordem alfabética.
 
 5. Queremos exibir as informações em um formato mais próximo da realidade brasileira, portanto estaremos usando os dados da tabela `jobs` do banco `hr`. Monte uma query utilizando a tabela `jobs` e exiba quatro colunas. A primeira coluna deve exibir o **nome do cargo**, com o apelido "Cargo". A segunda coluna deve exibir a **variação salarial** entre o salário mínimo e o salário máximo daquele cargo, apelidando-a de "Variação Salarial". Na terceira coluna, exiba a média mínima mensal daquele cargo, arredondando o valor com uma precisão de duas casas decimais. A terceira coluna deve ser apelidada de "Média mínima mensal". Exiba na quarta coluna a **média máxima mensal**, arredondada com uma precisão de duas casas decimais e apelide essa coluna de "Média máxima mensal". Seu resultado deve estar ordenado em ordem crescente, usando a coluna "Variação salarial" como base e deve produzir exatamente 19 resultados. Considere que os salários mínimo e máximo da tabela `jobs` são salários anuais.
 
