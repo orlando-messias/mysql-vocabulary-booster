@@ -82,6 +82,8 @@ Foi decidido que vamos continuar atendendo apenas à região `"Europa"`. Sendo a
 
 Os resultados devem estar ordenados pelo nome do país em ordem alfabética.
 
+---
+
 ### Desafio 2
 
 Com base em todos os cargos presentes, queremos categorizar o nível de remuneração de cada cargo. Utilizando o banco `hr` como referência, seu relatório deve possuir as seguintes colunas:
@@ -100,6 +102,8 @@ Com base em todos os cargos presentes, queremos categorizar o nível de remunera
 
 Os resultados devem estar ordenados pelo nome do cargo em ordem alfabética.
 
+---
+
 ### Desafio 3
 
 Usando o banco `hr` como referência, crie uma query que exiba duas colunas:
@@ -109,6 +113,8 @@ Usando o banco `hr` como referência, crie uma query que exiba duas colunas:
 2. A segunda coluna deve possuir o alias "**Diferença entre salários máximo e mínimo**" e exibir a diferença entre os salários máximo e mínimo para o cargo em questão.
 
 Os resultados devem estar ordenados pela diferença entre salários máximo e mínimo em ordem crescente. Em caso de empate nessa diferença os resultados devem ser ordenados pelo nome do cargo em ordem alfabética.
+
+---
 
 ### Desafio 4
 
@@ -132,9 +138,23 @@ Devido ao fato de a média salarial ser um valor monetário, sempre que for faze
 
 Os resultados devem estar ordenados pela média salarial em ordem crescente. Em caso de empate na média, os resultados devem ser ordenados pelo nome do cargo em ordem alfabética.
 
-5. Queremos exibir as informações em um formato mais próximo da realidade brasileira, portanto estaremos usando os dados da tabela `jobs` do banco `hr`. Monte uma query utilizando a tabela `jobs` e exiba quatro colunas. A primeira coluna deve exibir o **nome do cargo**, com o apelido "Cargo". A segunda coluna deve exibir a **variação salarial** entre o salário mínimo e o salário máximo daquele cargo, apelidando-a de "Variação Salarial". Na terceira coluna, exiba a média mínima mensal daquele cargo, arredondando o valor com uma precisão de duas casas decimais. A terceira coluna deve ser apelidada de "Média mínima mensal". Exiba na quarta coluna a **média máxima mensal**, arredondada com uma precisão de duas casas decimais e apelide essa coluna de "Média máxima mensal". Seu resultado deve estar ordenado em ordem crescente, usando a coluna "Variação salarial" como base e deve produzir exatamente 19 resultados. Considere que os salários mínimo e máximo da tabela `jobs` são salários anuais.
+---
 
-      ![test5](images/test5.png)
+### Desafio 5
+
+Usando o banco `hr` como referência, queremos exibir informações sobre os cargos cadastrados nesse banco em um formato mais próximo da realidade brasileira. Considerando que os salários máximo e mínimo de um cargo são salários anuais, crie uma query que exiba quatro colunas:
+
+1. A primeira coluna deve possuir o alias "**Cargo**" e exibir o nome do cargo.
+
+2. A segunda coluna deve possuir o alias "**Variação Salarial**" e exibir a diferença entre os salários máximo e mínimo daquele cargo.
+
+3. A terceira coluna deve possuir o alias "**Média mínima mensal**" e exibir a média mínima **mensal** daquele cargo. Arredonde a média com uma precisão de duas casas decimais.
+
+4. A quarta coluna deve possuir o alias "**Média máxima mensal**" e exibir a média máxima **mensal** daquele cargo. Arredonde a média com uma precisão de duas casas decimais.
+
+Os resultados devem estar ordenados pela variação salarial em ordem crescente. Em caso de empate na variação, os resultados devem ser ordenados pelo nome do cargo em ordem alfabética.
+
+---
 
 6. Usando as tabelas `employees`, `jobs` e `departments` do banco `hr`, monte uma query que exiba sete colunas, sendo as três primeiras a `start_date`, o `employee_id` e o **nome completo** do funcionário (não se esqueça do espaço entre o nome e o sobrenome) com um apelido de "Nome completo". As próximas duas colunas devem exibir o `job_id` e o **nome do cargo**, com o apelido de "Cargo". Na sequência, as próximas duas colunas devem exibir o **id do departamento** e o **nome do departamento**, com o apelido "Departamento", de todos os funcionários cadastrados na tabela `job_history`. Os resultados devem estar ordenados pelo nome dos funcionários em ordem decrescente. Sua query deve produzir exatos 10 resultados.
 
