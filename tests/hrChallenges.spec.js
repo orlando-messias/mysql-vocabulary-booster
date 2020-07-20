@@ -84,4 +84,13 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Faça um relatório que mostra o **histórico de cargos das pessoas empregadas** que iniciaram seus cargos nos meses de janeiro, fevereiro ou março', () => {
+    it('Verifica o desafio 7', async () => {
+      const challengeQuery = readFileSync('desafio7.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult7');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
 });

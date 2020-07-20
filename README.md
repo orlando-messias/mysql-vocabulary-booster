@@ -172,9 +172,19 @@ Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em
 
 ---
 
-7. Usando as tabelas `job_history` e `employees` do banco `hr`, monte um relatório com as seguintes características: a primeira coluna deve conter o `employee_id` do empregado. A segunda coluna deve conter o **nome completo** desse funcionário em CAIXA ALTA (não se esqueça do espaço entre o nome e o sobrenome). Apelide essa coluna de "Nome completo". A terceira coluna deve mostrar a data de início do empregado naquele cargo (`start_date`). A quarta coluna deve exibir seu salário. Exiba somente os funcionários que iniciaram nos meses 1, 2 ou 3. Ordene seus resultados por nome completo em ordem alfabética. Sua query deve produzir exatamente 6 registros.
+### Desafio 7
 
-    ![test7](images/test7.png)
+Faça um relatório que mostra o **histórico de cargos das pessoas empregadas** que iniciaram seus cargos nos meses de janeiro, fevereiro ou março. Para isso, usando o banco `hr` como referência, monte uma query que exiba três colunas:
+
+1. A primeira coluna deve possuir o alias "**Nome completo**" e exibir o **nome completo** da pessoa empregada em CAIXA ALTA (não se esqueça do espaço entre o nome e o sobrenome).
+
+2. A segunda coluna deve possuir o alias "**Data de início**" e exibir a data que a pessoa iniciou o cargo.
+
+3. A terceira coluna deve possuir o alias "**Salário**" e exibir o salário que a pessoa teve para aquele cargo.
+
+Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em ordem alfabética. Em caso de empate no nome completo, ordene os resultados pela data de início que a pessoa iniciou seu cargo, em ordem crescente.
+
+---
 
 8. Usando `JOINS` na tabela `orders` e `customers` do banco `w3schools`, exiba as colunas `OrderID`, `CustomerID`, **nome de contato** do cliente e o id da empresa de envio (`ShipperID`). Os resultados devem estar ordenados pelo `CustomerID` em ordem crescente e exibir apenas os resultados em que o `ShipperID` for `1` ou `2`. Sua query deve produzir 128 resultados.
 
