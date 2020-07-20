@@ -93,4 +93,13 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Something something desafio 12', () => {
+    it('Verifica o desafio 12', async () => {
+      const challengeQuery = readFileSync('desafio12.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult12');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
 });

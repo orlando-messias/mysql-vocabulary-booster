@@ -254,9 +254,33 @@ Os resultados devem estar ordenados pelo nome de contato da pessoa cliente em or
 
 ---
 
-12. Usando o `JOIN` apropriado na tabela `employees` do banco `hr`, monte uma query que exiba seis colunas. As três primeiras serão o `first_name`, `salary` e `phone_number` do funcionário. As próximas três serão o `first_name`, `salary` e `phone_number` de todos os funcionários que possuem o mesmo cargo. Seus resultados devem ser ordenados pelo `first_name` da primeira coluna e devem produzir 1839 resultados.
+### Desafio 12
 
-    ![test12](images/test12.png)
+Faça um relatório que lista todas as pessoas funcionárias **que possuem o mesmo cargo**. Ou seja, suponha que houvesse somente três pessoas funcionárias, `João`, `Maria` e `Alex`, e:
+
+* `João` e `Maria` possuem o mesmo cargo;
+
+* `Alex` não tem outra pessoa funcionária com o mesmo cargo.
+
+Logo, podemos dizer que `João` tem uma pessoa funcionária associada, `Maria`, que possui o mesmo cargo. Também podemos dizer que `Maria` tem uma pessoa funcionária associada, `João`, que possui o mesmo cargo. Já `Alex` não tem outra pessoa funcionária associada com o mesmo cargo. Portanto, seu relatório deveria ter dois resultados, um indicando que `Maria` tem uma pessoa associada `João` que possui o mesmo cargo, e o outro resultado indicando que `João` tem uma pessoa associada `Maria` que possui o mesmo cargo.
+
+Com base nisso, usando o banco `hr` como referência, monte uma query que exiba seis colunas:
+
+1. A primeira coluna deve possuir o alias "**Nome completo funcionário 1**" e exibir o **nome completo** da pessoa funcionária (não se esqueça do espaço entre o nome e o sobrenome).
+
+2. A segunda coluna deve possuir o alias "**Salário funcionário 1**" e exibir o salário dessa pessoa.
+
+3. A terceira coluna deve possuir o alias "**Telefone funcionário 1**" e exibir o número de telefone dessa pessoa.
+
+4. A quarta coluna deve possuir o alias "**Nome completo funcionário 2**" e exibir o **nome completo** da pessoa funcionária associada que possui o mesmo cargo (não se esqueça do espaço entre o nome e o sobrenome).
+
+5. A quinta coluna deve possuir o alias "**Salário funcionário 2**" e exibir o salário da pessoa funcionária associada que possui o mesmo cargo.
+
+6. A sexta coluna deve possuir o alias "**Telefone funcionário 2**" e exibir o número da pessoa funcionária associada que possui o mesmo cargo.
+
+Os resultados devem estar ordenados pela coluna "**Nome completo funcionário 1**" em ordem alfabética. Em caso de empate, os resultados devem ser ordenados pela coluna **Nome completo funcionário 2**" em ordem alfabética.
+
+---
 
 13. Exiba o **nome dos produtos** e **preço dos produtos** cadastrados na tabela `products` do banco `w3schools`. Porém, exiba somente produtos que têm uma quantidade de produtos correspondente maior que 80 na tabela `order_details`. Sua query deve produzir exatamente 3 resultados e ser ordenada pelo nome do produto.
 
