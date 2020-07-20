@@ -200,9 +200,17 @@ Seus resultados devem estar ordenados pelo nome de contato da pessoa que fez o p
 
 ---
 
-9. Usando a tabela `orders` do banco `w3schools`, exiba duas colunas: a primeira coluna deve ser o `EmployeeId` e a segunda coluna deve exibir o total de pedidos já feitos por aquele funcionário. A segunda coluna deve possuir um apelido de "Total de pedidos". Ordene seus resultados pelo total de pedidos em ordem crescente. Sua query deve retornar apenas 9 resultados.
+### Desafio 9
 
-    ![test9](images/test9.png)
+Exibe todos as pessoas funcionárias que já realizaram algum pedido, mostrando também seu total de pedidos feitos. Usando o banco `w3schools` como referência, monte uma query que exiba duas colunas:
+
+1. A primeira coluna deve possuir o alias "**Nome completo**" e exibir o nome completo da pessoa funcionária (não se esqueça do espaço entre o nome e o sobrenome).
+
+2. A segundo coluna deve possuir o alias "**Total de pedidos**" e exibir a quantidade total de pedidos feitos pela pessoa.
+
+Ordene seus resultados pelo total de pedidos em ordem crescente.
+
+---
 
 10. Usando a tabela `order_details` do banco `w3schools`, queremos entender como cada produto está se saindo e, para isso, vamos analisar algumas informações sobre os últimos pedidos que foram registrados. Exiba quatro colunas, sendo que a primeira deve ser o `ProductID`. A segunda coluna deve exibir a **quantidade mínima** que já foi pedida deste produto e deve ser apelidada de "Mínimo". A terceira coluna deve exibir a **quantidade máxima** que já foi pedida deste produto e deve ser apelidada de "Máximo". A quarta coluna deve exibir a **média de quantidade nos pedidos** deste produto, arredondada para duas casas decimais e apelidada de "Média". Sua query deve exibir apenas os produtos que possuem uma média de quantidade de pedidos registrados acima de 20.00. Ordene seus resultados em ordem crescente com base na média de quantidade de pedidos. Sua query deve produzir exatamente 48 registros.
 

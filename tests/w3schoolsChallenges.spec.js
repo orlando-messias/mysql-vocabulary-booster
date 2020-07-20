@@ -39,4 +39,13 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Exibe todos as pessoas funcionárias que já realizaram algum pedido, mostrando também seu total de pedidos feitos', () => {
+    it('Verifica o desafio 9', async () => {
+      const challengeQuery = readFileSync('desafio9.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult9');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
 });
