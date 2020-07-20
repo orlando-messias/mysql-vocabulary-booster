@@ -48,4 +48,13 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`', () => {
+    it('Verifica o desafio 10', async () => {
+      const challengeQuery = readFileSync('desafio10.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult10');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
 });

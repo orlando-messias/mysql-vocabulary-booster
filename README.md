@@ -212,9 +212,21 @@ Ordene seus resultados pelo total de pedidos em ordem crescente.
 
 ---
 
-10. Usando a tabela `order_details` do banco `w3schools`, queremos entender como cada produto está se saindo e, para isso, vamos analisar algumas informações sobre os últimos pedidos que foram registrados. Exiba quatro colunas, sendo que a primeira deve ser o `ProductID`. A segunda coluna deve exibir a **quantidade mínima** que já foi pedida deste produto e deve ser apelidada de "Mínimo". A terceira coluna deve exibir a **quantidade máxima** que já foi pedida deste produto e deve ser apelidada de "Máximo". A quarta coluna deve exibir a **média de quantidade nos pedidos** deste produto, arredondada para duas casas decimais e apelidada de "Média". Sua query deve exibir apenas os produtos que possuem uma média de quantidade de pedidos registrados acima de 20.00. Ordene seus resultados em ordem crescente com base na média de quantidade de pedidos. Sua query deve produzir exatamente 48 registros.
+### Desafio 10
 
-    ![test10](images/test10.png)
+Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`. Usando o banco `w3schools` como referência, monte uma query que exiba quatro colunas:
+
+1. A primeira coluna deve possuir o alias "**Produto**" e exibir o nome do produto.
+
+2. A segunda coluna deve possuir o alias "**Mínima**" e exibir a **quantidade mínima** que já foi pedida desse produto.
+
+3. A segunda coluna deve possuir o alias "**Máxima**" e exibir a **quantidade máxima** que já foi pedida desse produto.
+
+4. A quarta coluna deve deve possuir o alias "**Média**" e exibir a **média de quantidade nos pedidos** deste produto, arredondada para duas casas decimais.
+
+Os resultados devem estar ordenados pela média de quantidade nos pedidos em ordem crescente. Em caso de empate na média, os resultados devem ser ordenados pelo nome do produto em ordem alfabética.
+
+---
 
 11. Queremos saber o número de compatriotas de cada cliente presente na tabela `customers` do banco `w3schools`. Crie uma query que exiba o **id do cliente**, seu nome, apelidado de "Nome", o país em que reside, com o apelido "País" e o número de pessoas que moram no mesmo país, com o apelido "Número de Compatriotas". Os resultados devem ser ordenados pelo nome do cliente em ordem alfabética. Sua query deve produzir 88 resultados.
 
