@@ -294,9 +294,11 @@ Os resultados devem estar ordenados pelo nome do produto em ordem alfabética.
 
 ---
 
-14. O banco `w3schools` possui países cadastrados nas tabelas `customers` e `suppliers`. Queremos saber quais são os cinco primeiros países que estão cadastrados no banco, em ordem alfabética, em qualquer uma das tabelas. Crie uma query que retorne esse resultado.
+### Desafio 14
 
-    ![test14](images/test14.png)
+Sabemos que tanto as pessoas consumidoras quanto as empresas fornecedoras de produtos possuem países cadastrados. Logo, considerando o conjunto formado por essas pessoas e empresas, queremos saber quais são os cinco primeiros países distintos, em ordem alfabética, presentes nesse conjunto. Usando o banco `w3schools` como referência, monte uma query que exiba uma coluna, com o alias "**País**", que deve mostrar o nome do país.
+
+---
 
 15. Crie uma procedure chamada `BuscarMediaPorCategoriaDeTrabalho` que recebe um parâmetro `VARCHAR` correspondente a um `job_id` da tabela `employees` do banco de dados `hr`. Ao ser executada, sua procedure deverá obter da tabela `employees` a **média salarial arredondada** deste trabalho, arredondada para as duas casas decimais. Dica importante: não esqueça de incluir a linha `USE hr;` antes da declaração de sua procedure. Quando sua procedure for executada com parâmetro 'IT_PROG', deve retornar 5760.00.
 

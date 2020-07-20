@@ -75,4 +75,13 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Considerando o conjunto formado pelas pessoas consumidoras e empresas fornecedoras de produtos, queremos saber quais são os cinco primeiros países distintos, em ordem alfabética, presentes nesse conjunto', () => {
+    it('Verifica o desafio 14', async () => {
+      const challengeQuery = readFileSync('desafio14.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult14');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
 });
