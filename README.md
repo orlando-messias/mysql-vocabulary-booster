@@ -282,9 +282,17 @@ Os resultados devem estar ordenados pela coluna "**Nome completo funcionário 1*
 
 ---
 
-13. Exiba o **nome dos produtos** e **preço dos produtos** cadastrados na tabela `products` do banco `w3schools`. Porém, exiba somente produtos que têm uma quantidade de produtos correspondente maior que 80 na tabela `order_details`. Sua query deve produzir exatamente 3 resultados e ser ordenada pelo nome do produto.
+### Desafio 13
 
-    ![test13](images/test13.png)
+Exibe todos produtos **que já tiveram um pedido associado requerindo uma quantidade desse produto maior que 80**. Usando o banco `w3schools` como referência, monte uma query que exiba duas colunas:
+
+1. A primeira coluna deve possuir o alias "**Produto**" e exibir o nome do produto.
+
+2. A segunda coluna deve possuir o alias "**Preço**" e exibir o preço desse produto.
+
+Os resultados devem estar ordenados pelo nome do produto em ordem alfabética.
+
+---
 
 14. O banco `w3schools` possui países cadastrados nas tabelas `customers` e `suppliers`. Queremos saber quais são os cinco primeiros países que estão cadastrados no banco, em ordem alfabética, em qualquer uma das tabelas. Crie uma query que retorne esse resultado.
 
