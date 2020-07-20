@@ -57,4 +57,13 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Exibe todas as pessoas clientes **que possuem compatriotas**, mostrando a quantidade de compatriotas para cada pessoa cliente', () => {
+    it('Verifica o desafio 11', async () => {
+      const challengeQuery = readFileSync('desafio11.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult11');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
 });

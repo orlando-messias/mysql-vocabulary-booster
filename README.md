@@ -228,9 +228,31 @@ Os resultados devem estar ordenados pela média de quantidade nos pedidos em ord
 
 ---
 
-11. Queremos saber o número de compatriotas de cada cliente presente na tabela `customers` do banco `w3schools`. Crie uma query que exiba o **id do cliente**, seu nome, apelidado de "Nome", o país em que reside, com o apelido "País" e o número de pessoas que moram no mesmo país, com o apelido "Número de Compatriotas". Os resultados devem ser ordenados pelo nome do cliente em ordem alfabética. Sua query deve produzir 88 resultados.
+### Desafio 11
 
-    ![test11](images/test11.png)
+Exibe todas as pessoas clientes **que possuem compatriotas**, mostrando a quantidade de compatriotas para cada pessoa cliente. Ou seja, suponha que houvese apenas quatro clientes:
+
+1. `Maria`, do `Brasil`.
+
+2. `João`, do `Brasil`.
+
+3. `Gabriela`, do `Brasil`.
+
+4. `Alex`, da `Irlanda`.
+
+Logo, podemos dizer que `Maria`, `João` e `Gabriela` são compatriotas entre si, haja visto que as três pessoas moram no `Brasil`. Além disso, podemos dizer que tanto `Maria` quanto `João` e `Gabriela` possuem duas pessoas compatriotas associadas. Já `Alex` não possui compatriota, haja visto que não há outras pessoas da `Irlanda`.
+
+Usando o banco `w3schools` como referência, monte uma query que exiba três colunas:
+
+1. A primeira coluna deve possuir o alias "**Nome**" e exibir **o nome de contato** da pessoa cliente.
+
+2. A segunda coluna deve possuir o alias "**País**" e exibir o nome do país em que a pessoa reside.
+
+3. A terceira coluna deve possuir o alias "**Número de compatriotas**" e exibir o número de pessoas que moram no mesmo país.
+
+Os resultados devem estar ordenados pelo nome de contato da pessoa cliente em ordem alfabética.
+
+---
 
 12. Usando o `JOIN` apropriado na tabela `employees` do banco `hr`, monte uma query que exiba seis colunas. As três primeiras serão o `first_name`, `salary` e `phone_number` do funcionário. As próximas três serão o `first_name`, `salary` e `phone_number` de todos os funcionários que possuem o mesmo cargo. Seus resultados devem ser ordenados pelo `first_name` da primeira coluna e devem produzir 1839 resultados.
 
