@@ -75,4 +75,13 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**', () => {
+    it('Verifica o desafio 6', async () => {
+      const challengeQuery = readFileSync('desafio6.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult6');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
 });

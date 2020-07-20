@@ -156,9 +156,21 @@ Os resultados devem estar ordenados pela variação salarial em ordem crescente.
 
 ---
 
-6. Usando as tabelas `employees`, `jobs` e `departments` do banco `hr`, monte uma query que exiba sete colunas, sendo as três primeiras a `start_date`, o `employee_id` e o **nome completo** do funcionário (não se esqueça do espaço entre o nome e o sobrenome) com um apelido de "Nome completo". As próximas duas colunas devem exibir o `job_id` e o **nome do cargo**, com o apelido de "Cargo". Na sequência, as próximas duas colunas devem exibir o **id do departamento** e o **nome do departamento**, com o apelido "Departamento", de todos os funcionários cadastrados na tabela `job_history`. Os resultados devem estar ordenados pelo nome dos funcionários em ordem decrescente. Sua query deve produzir exatos 10 resultados.
+### Desafio 6
 
-    ![test6](images/test6.png)
+Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**. Para isso, usando o banco `hr` como referência, monte uma query que exiba quatro colunas:
+
+1. A primeira coluna deve possuir o alias "**Nome completo**" e exibir o **nome completo** da pessoa empregada (não se esqueça do espaço entre o nome e o sobrenome).
+
+2. A segunda coluna deve possuir o alias "**Cargo**" e exibir o nome do cargo da pessoa.
+
+3. A terceira coluna deve possuir o alias "**Data de início do cargo**" e exibir a data que a pessoa iniciou o cargo.
+
+4. A quarta coluna deve possuir o alias "**Departamento**" e mostrar o nome do departamento em que a pessoa exerceu seu cargo.
+
+Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em ordem decrescente. Em caso de empate no nome completo, ordene os resultados pelo nome do cargo em ordem alfabética.
+
+---
 
 7. Usando as tabelas `job_history` e `employees` do banco `hr`, monte um relatório com as seguintes características: a primeira coluna deve conter o `employee_id` do empregado. A segunda coluna deve conter o **nome completo** desse funcionário em CAIXA ALTA (não se esqueça do espaço entre o nome e o sobrenome). Apelide essa coluna de "Nome completo". A terceira coluna deve mostrar a data de início do empregado naquele cargo (`start_date`). A quarta coluna deve exibir seu salário. Exiba somente os funcionários que iniciaram nos meses 1, 2 ou 3. Ordene seus resultados por nome completo em ordem alfabética. Sua query deve produzir exatamente 6 registros.
 
