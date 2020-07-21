@@ -197,15 +197,15 @@ Usando o banco `hr` como referência, queremos extrair informações a respeito 
 
 2. A segunda coluna deve possuir o alias "**Média salarial**" e exibir a média dos salários das pessoas empregadas que possuem o cargo em questão.
 
-3. A terceira coluna deve possuir o alias "**Salarial**" e categorizar o nível de senioridade do cargo com base na média salarial, da seguinte forma:
+3. A terceira coluna deve possuir o alias "**Senioridade**" e categorizar o nível de senioridade do cargo com base na média salarial, da seguinte forma:
 
-    Média salarial entre 2000 - 5800 -> 'Júnior'
+    Média salarial entre 2000 - 5800 -> Júnior
 
-    Média salarial entre 5801 - 7500 -> 'Pleno'
+    Média salarial entre 5801 - 7500 -> Pleno
 
-    Média salarial entre 7501 - 10500 -> 'Sênior'
+    Média salarial entre 7501 - 10500 -> Sênior
 
-    Média salarial acima de 10500 -> 'CEO'
+    Média salarial acima de 10500 -> CEO
 
 Devido ao fato de a média salarial ser um valor monetário, sempre que for fazer uso da média salarial, é preciso arredondá-la usando apenas duas casas decimais.
 
