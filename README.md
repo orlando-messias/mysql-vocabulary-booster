@@ -6,6 +6,56 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ---
 
+## Instruções para entregar seu projeto:
+
+### ANTES DE COMEÇAR A DESENVOLVER:
+
+1. Clone o repositório
+  * `git clone https://github.com/tryber/sd-0x-mysql-vocabulary-booster.git`.
+  * Entre na pasta do repositório que você acabou de clonar:
+    * `cd sd-0x-mysql-vocabulary-booster`
+
+2. Instale as dependências
+  * `npm install`
+
+3. Crie uma branch a partir da branch `master`
+  * Verifique que você está na branch `master`
+    * Exemplo: `git branch`
+  * Se não estiver, mude para a branch `master`
+    * Exemplo: `git checkout master`
+  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
+    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
+    * Exemplo: `git checkout -b seunome-mysql-vocabulary-booster`
+
+4. Para cada exercício você deve criar um novo arquivo sql seguindo a seguinte estrutura:
+  * desafio1.sql, desafio2.sql, desafio3.sql, desafio4.sql, ..., desafioN.sql
+
+5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+  * Verifique que as mudanças ainda não estão no _stage_
+    * Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.sql)
+  * Adicione o novo arquivo ao _stage_ do Git
+      * Exemplo:
+        * `git add .` (adicionando solução para desafio 1)
+        * `git status` (deve aparecer listado o arquivo _desafio1.sql_ em verde)
+  * Faça o `commit` inicial
+      * Exemplo:
+        * `git commit -m 'iniciando o projeto MySQL Vocabulary Booster'` (fazendo o primeiro commit)
+        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
+
+6. Adicione a sua branch com o novo `commit` ao repositório remoto
+  * Usando o exemplo anterior: `git push -u origin seunome-mysql-vocabulary-booster`
+
+7. Crie um novo `Pull Request` _(PR)_
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-mysql-vocabulary-booster/pulls)
+  * Clique no botão verde _"New pull request"_
+  * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
+  * Clique no botão verde _"Create pull request"_
+  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+  * **Não se preocupe em preencher mais nada por enquanto!**
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-mysql-vocabulary-booster/pulls) e confira que o seu _Pull Request_ está criado
+
+---
+
 ## O que deverá ser desenvolvido
 
 Hoje você fará um projeto com o codinome *Vocabulary Booster*, em que vai explorar todos os conceitos vistos até o momento sobre SQL.
@@ -355,53 +405,6 @@ Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. 
 3. A terceira coluna deve possuir o alias "**Cargo**" e exibir cargo que a pessoa já ocupou.
 
 Os resultados devem estar ordenados pelo nome do departamento em ordem alfabética. Em caso de empate no nome do departamento, ordene os resultados pelo nome do cargo em ordem alfabética.
-
----
-
-## Instruções para entregar seu projeto:
-
-### ANTES DE COMEÇAR A DESENVOLVER:
-
-1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-0x-mysql-vocabulary-booster.git`.
-  * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-mysql-vocabulary-booster`
-
-2. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
-  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b jhonatan-de-souza-vocabulary-booster`
-
-3. Para cada exercício você deve criar um novo arquivo sql seguindo a seguinte estrutura:
-  * desafio1.sql, desafio2.sql, ..., desafioN.sql
-
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.sql)
-  * Adicione o novo arquivo ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando solução para desafio 1)
-        * `git status` (deve aparecer listado o arquivo _desafio1.sql_ em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
-        * `git commit -m 'iniciando o projeto MySQL Vocabulary Booster'` (fazendo o primeiro commit)
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin seunome-mysql-vocabulary-booster`
-
-6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-mysql-vocabulary-booster/pulls)
-  * Clique no botão verde _"New pull request"_
-  * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-  * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-mysql-vocabulary-booster/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
