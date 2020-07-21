@@ -300,9 +300,17 @@ Sabemos que tanto as pessoas consumidoras quanto as empresas fornecedoras de pro
 
 ---
 
-15. Crie uma procedure chamada `BuscarMediaPorCategoriaDeTrabalho` que recebe um parâmetro `VARCHAR` correspondente a um `job_id` da tabela `employees` do banco de dados `hr`. Ao ser executada, sua procedure deverá obter da tabela `employees` a **média salarial arredondada** deste trabalho, arredondada para as duas casas decimais. Dica importante: não esqueça de incluir a linha `USE hr;` antes da declaração de sua procedure. Quando sua procedure for executada com parâmetro 'IT_PROG', deve retornar 5760.00.
+### Desafio 15
 
-    ![test15](images/test15.png)
+Crie uma procedure chamada `buscar_media_por_cargo` que recebe como parâmetro o nome de um cargo e em retorno deve mostrar a média salarial de todas as pessoas que possuem esse cargo. Usando o banco `hr` como referência, sua procedure deve retornar somente uma coluna, com o alias "**Média salarial**", que mostra a média salarial arredondada para duas casas decimais.
+
+Confirme a execução correta da procedure, chamando-a e passando o nome de cargo igual a `"Programmer"`:
+
+`CALL buscar_media_por_cargo('Programmer');`
+
+Chamando-a dessa forma, sua procedure deve retornar `5760.00` como média salarial para pessoas que ocupam o cargo `"Programmer"`.
+
+---
 
 16. Crie uma função chamada `BuscarQuantidadeDeEmpregosPorFuncionario` que, ao receber o **id de um funcionário**, vá até a tabela `job_history`, no banco de dados `hr` e retorne a quantidade de empregos já gravados no sistema relacionados a esse funcionário. Confirme que sua function retorna o valor **2** ao ser chamada passando um funcionário com id **101**.
 
