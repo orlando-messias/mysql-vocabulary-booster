@@ -89,10 +89,13 @@ Neste projeto você fará uso de dois bancos de dados: o `hr` e um inédito cham
 
 ---
 
+# Instruções para restaurar os bancos de dados `w3schools` e `hr`
+
+1. Faça o download dos arquivos de backup [aqui](w3schools.sql) e [aqui](hr.sql) clicando em "Raw", depois clicando com botão direito e selecionando "Salvar como" para salvar os arquivos em seu computador.
 
 2. Abra o MySQL Workbench.
 
-3. Vá em `File -> Open SQL Script...` e selecione o arquivo `w3schools.sql`.
+3. Abra uma nova janela de query e cole dentro dela todo o conteúdo do arquivo `w3schools.sql`.
 
 4. Selecione todo o código com o atalho `CTRL-A` e clique no ícone de trovão para executar o script.
 
@@ -114,7 +117,7 @@ Neste projeto você fará uso de dois bancos de dados: o `hr` e um inédito cham
 
     ![Drop Schema](images/drop_schema.png)
 
-10. O mesmo processo mencionado anteriormente também deve ser feito para restaurar o banco `HR`. Verifique se o banco `HR` restaurado possui todas as tabelas indicadas na imagem abaixo. Se alguma estiver vazia ou ausente, faça o passo a seguir. Caso contrário, vá direto para a próxima seção.
+10. O mesmo processo mencionado anteriormente também deve ser feito para restaurar o banco `hr`. Verifique se o banco `hr` restaurado possui todas as tabelas indicadas na imagem abaixo. Se alguma estiver vazia ou ausente, faça o passo a seguir. Caso contrário, vá direto para a próxima seção.
 
     ![Tabelas do banco hr](images/hr.png)
 
