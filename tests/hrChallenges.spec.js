@@ -161,4 +161,18 @@ describe('Desafios iniciais', () => {
       expect(result).toEqual(expectedResult);
     });
   });
+
+  describe('Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. Logo, crie uma procedure chamada `exibir_historico_completo_por_funcionario` que, dado o e-mail de uma pessoa funcionária, retorna todos os cargos em seu histórico', () => {
+    it('Verifica o desafio 19', async () => {
+      const challengeQuery = readFileSync('desafio19.sql', 'utf8').trim();
+      const createProcedureQuery = /CREATE PROCEDURE.*END/si.exec(challengeQuery)[0];
+
+      await sequelize.query(createProcedureQuery);
+
+      const result = await sequelize.query('CALL exibir_historico_completo_por_funcionario(\'NKOCHHAR\');');
+      const expectedResult = require('./challengesResults/challengeResult19');
+
+      expect(result).toEqual(expectedResult);
+    });
+  });
 });
