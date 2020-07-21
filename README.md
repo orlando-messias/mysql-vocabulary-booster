@@ -263,7 +263,7 @@ Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em
 
 Exibe todas as **pessoas consumidoras** cujos pedidos já foram enviados pelas empresas `"Speedy Express"` ou `"United Package"`. Para isso, usando o banco `w3schools` como referência, monte uma query que exiba três colunas:
 
-1. A primeira coluna deve possuir o alias "**Nome de contato**" e exibir **o nome de contato** da pessoa consimidora.
+1. A primeira coluna deve possuir o alias "**Nome de contato**" e exibir **o nome de contato** da pessoa consumidora.
 
 2. A segunda coluna deve possuir o alias "**Empresa que fez o envio**" e exibir o nome da empresa que efetuou o envio do pedido.
 
@@ -387,7 +387,7 @@ Chamando-a dessa forma, sua procedure deve retornar `5760.00` como média salari
 
 ## Desafio 16
 
-Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` no banco de dados `hr` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos já gravados no sistema relacionados a essa pessoa. Confirme que sua function retorna o valor `2` ao ser chamada passando uma pessoa funcionária cujo email é `"NKOCHHAR"`.
+Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` no banco de dados `hr` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos **presentes em seu histórico**. Confirme que sua função retorna o valor `2` ao ser chamada passando uma pessoa funcionária cujo email é `"NKOCHHAR"`.
 
 ---
 
