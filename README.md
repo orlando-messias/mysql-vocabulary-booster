@@ -427,6 +427,12 @@ Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. 
 
 Os resultados devem estar ordenados pelo nome do departamento em ordem alfabética. Em caso de empate no nome do departamento, ordene os resultados pelo nome do cargo em ordem alfabética.
 
+Confirme a execução correta da procedure, chamando-a e passando o email `"NKOCHHAR"`:
+
+`CALL exibir_historico_completo_por_funcionario('NKOCHHAR');`
+
+Chamando-a dessa forma, sua procedure deve mostrar que a pessoa funcionária `Neena Kochhar` teve dois cargos em seu histórico: um como `Accounting Manager` no departamento `Accounting` e o outro como `Public Accountant` no departamento `Accounting`, nessa ordem.
+
 ---
 
 ### DURANTE O DESENVOLVIMENTO
