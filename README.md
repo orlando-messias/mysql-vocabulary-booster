@@ -431,8 +431,6 @@ Os resultados devem estar ordenados pelo nome do departamento em ordem alfabéti
 
 ### DURANTE O DESENVOLVIMENTO
 
-* ⚠ **LEMBRE-SE DE CRIAR TODOS OS ARQUIVOS DENTRO DA PASTA COM O SEU NOME** ⚠
-
 * Faça `commits` das alterações que você fizer no código regularmente
 
 * Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
