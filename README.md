@@ -336,9 +336,11 @@ Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em
 
 ---
 
-18. Crie uma function chamada `ExibirQuantidadePessoasContratadasPorMesEAno` que recebe dois parâmetros: `mes` (sem acento) e `ano`, ambos do tipo `INT`. A function deve ir até a tabela `employees` do banco `hr` e retornar a **quantidade de funcionários** que foram contratados (`hire_date`) dentro do `mes` e `ano` informados. Sua function deverá retornar o resultado **14**, ao ser executada com os parâmetros **mês 6 e ano 1987**.
+### Desafio 18
 
-    ![test18](images/test18.png)
+Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano. Confirme que sua função retorna o valor `14` ao ser chamada passando os números `6` e `1987` para mês e ano, respectivamente.
+
+---
 
 19. Crie uma procedure chamada `ExibirHistoricoCompletoPorFuncionario` que retorna uma informação completa de um funcionário, fazendo uso do banco `hr`. Sua procedure deve receber apenas um parâmetro `employee_id` do tipo `INT` de um funcionário e deve exibir quatro colunas. A coluna primeira será o próprio id que foi passado. A segunda será o nome completo desse funcionário, com o apelido "Nome Completo". A terceira coluna deve conter a descrição do seu cargo, com o apelido "Cargo". A quarta coluna deve exibir o nome do departamento onde este funcionário trabalhou, com o apelido de "Departamento". Quando sua procedure for executada com parâmetro 101, deve retornar a seguinte listagem:
 

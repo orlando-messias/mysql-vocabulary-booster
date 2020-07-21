@@ -143,4 +143,22 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano', () => {
+    it('Verifica o desafio 18', async () => {
+      const challengeQuery = readFileSync('desafio18.sql', 'utf8').trim();
+      const createFunctionQuery = /CREATE FUNCTION.*END/si.exec(challengeQuery)[0];
+
+      await sequelize.query(createFunctionQuery);
+
+      const result = await sequelize.query(
+        `SELECT exibir_quantidade_pessoas_contratadas_por_mes_e_ano(6, 1987) AS total;`,
+        { type: 'SELECT' },
+      );
+
+      const expectedResult = require('./challengesResults/challengeResult18');
+
+      expect(result).toEqual(expectedResult);
+    });
+  });
 });
