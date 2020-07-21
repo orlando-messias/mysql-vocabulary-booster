@@ -312,9 +312,9 @@ Chamando-a dessa forma, sua procedure deve retornar `5760.00` como média salari
 
 ---
 
-16. Crie uma função chamada `BuscarQuantidadeDeEmpregosPorFuncionario` que, ao receber o **id de um funcionário**, vá até a tabela `job_history`, no banco de dados `hr` e retorne a quantidade de empregos já gravados no sistema relacionados a esse funcionário. Confirme que sua function retorna o valor **2** ao ser chamada passando um funcionário com id **101**.
+### Desafio 16
 
-    ![test16](images/test16.png)
+Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` no banco de dados `hr` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos já gravados no sistema relacionados a essa pessoa. Confirme que sua function retorna o valor `2` ao ser chamada passando uma pessoa funcionária cujo email é `"NKOCHHAR"`.
 
 ### BÔNUS:
 

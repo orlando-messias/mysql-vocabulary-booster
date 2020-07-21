@@ -116,4 +116,22 @@ describe('Desafios iniciais', () => {
       expect(result).toEqual(expectedResult);
     });
   });
+
+  describe('Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` no banco de dados `hr` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos já gravados no sistema relacionados a essa pessoa', () => {
+    it('Verifica o desafio 16', async () => {
+      const challengeQuery = readFileSync('desafio16.sql', 'utf8').trim();
+      const createFunctionQuery = /CREATE FUNCTION.*END/si.exec(challengeQuery)[0];
+
+      await sequelize.query(createFunctionQuery);
+
+      const result = await sequelize.query(
+        `SELECT buscar_quantidade_de_empregos_por_funcionario(\'NKOCHHAR\') AS total_empregos;`,
+        { type: 'SELECT' },
+      );
+
+      const expectedResult = require('./challengesResults/challengeResult16');
+
+      expect(result).toEqual(expectedResult);
+    });
+  });
 });
