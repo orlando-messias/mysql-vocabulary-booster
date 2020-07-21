@@ -143,9 +143,9 @@ MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
 ```
 ---
 
-## Desafios SQL
+# Requisitos do projeto
 
-### Desafio 1
+## Desafio 1
 
 Foi decidido que vamos continuar atendendo apenas à região `"Europa"`. Sendo assim, usando o banco `hr` como referência, precisamos de um relatório que deve apresentar duas colunas:
 
@@ -157,7 +157,7 @@ Os resultados devem estar ordenados pelo nome do país em ordem alfabética.
 
 ---
 
-### Desafio 2
+## Desafio 2
 
 Com base em todos os cargos presentes, queremos categorizar o nível de remuneração de cada cargo. Utilizando o banco `hr` como referência, seu relatório deve possuir as seguintes colunas:
 
@@ -177,7 +177,7 @@ Os resultados devem estar ordenados pelo nome do cargo em ordem alfabética.
 
 ---
 
-### Desafio 3
+## Desafio 3
 
 Usando o banco `hr` como referência, crie uma query que exiba duas colunas:
 
@@ -189,7 +189,7 @@ Os resultados devem estar ordenados pela diferença entre salários máximo e m�
 
 ---
 
-### Desafio 4
+## Desafio 4
 
 Usando o banco `hr` como referência, queremos extrair informações a respeito **dos salários das pessoas empregadas**. Para isso, crie uma query que exiba três colunas:
 
@@ -213,7 +213,7 @@ Os resultados devem estar ordenados pela média salarial em ordem crescente. Em 
 
 ---
 
-### Desafio 5
+## Desafio 5
 
 Usando o banco `hr` como referência, queremos exibir informações sobre os cargos cadastrados nesse banco em um formato mais próximo da realidade brasileira. Considerando que os salários máximo e mínimo de um cargo são salários anuais, crie uma query que exiba quatro colunas:
 
@@ -229,7 +229,7 @@ Os resultados devem estar ordenados pela variação salarial em ordem crescente.
 
 ---
 
-### Desafio 6
+## Desafio 6
 
 Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**. Para isso, usando o banco `hr` como referência, monte uma query que exiba quatro colunas:
 
@@ -245,7 +245,7 @@ Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em
 
 ---
 
-### Desafio 7
+## Desafio 7
 
 Faça um relatório que mostra o **histórico de cargos das pessoas empregadas** que iniciaram seus cargos nos meses de janeiro, fevereiro ou março. Para isso, usando o banco `hr` como referência, monte uma query que exiba três colunas:
 
@@ -259,7 +259,7 @@ Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em
 
 ---
 
-### Desafio 8
+## Desafio 8
 
 Exibe todos os produtos cuja empresa que fez o envio seja `"Speedy Express"` ou `"United Package"`. Para isso, usando o banco `w3schools` como referência, monte uma query que exiba três colunas:
 
@@ -273,7 +273,7 @@ Seus resultados devem estar ordenados pelo nome de contato da pessoa que fez o p
 
 ---
 
-### Desafio 9
+## Desafio 9
 
 Exibe todos as pessoas funcionárias que já realizaram algum pedido, mostrando também seu total de pedidos feitos. Usando o banco `w3schools` como referência, monte uma query que exiba duas colunas:
 
@@ -285,7 +285,7 @@ Ordene seus resultados pelo total de pedidos em ordem crescente.
 
 ---
 
-### Desafio 10
+## Desafio 10
 
 Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`. Usando o banco `w3schools` como referência, monte uma query que exiba quatro colunas:
 
@@ -301,7 +301,7 @@ Os resultados devem estar ordenados pela média de quantidade nos pedidos em ord
 
 ---
 
-### Desafio 11
+## Desafio 11
 
 Exibe todas as pessoas clientes **que possuem compatriotas**, mostrando a quantidade de compatriotas para cada pessoa cliente. Ou seja, suponha que houvese apenas quatro clientes:
 
@@ -327,7 +327,7 @@ Os resultados devem estar ordenados pelo nome de contato da pessoa cliente em or
 
 ---
 
-### Desafio 12
+## Desafio 12
 
 Faça um relatório que lista todas as pessoas funcionárias **que possuem o mesmo cargo**. Ou seja, suponha que houvesse somente três pessoas funcionárias, `João`, `Maria` e `Alex`, e:
 
@@ -355,7 +355,7 @@ Os resultados devem estar ordenados pela coluna "**Nome completo funcionário 1*
 
 ---
 
-### Desafio 13
+## Desafio 13
 
 Exibe todos produtos **que já tiveram um pedido associado requerindo uma quantidade desse produto maior que 80**. Usando o banco `w3schools` como referência, monte uma query que exiba duas colunas:
 
@@ -367,13 +367,13 @@ Os resultados devem estar ordenados pelo nome do produto em ordem alfabética.
 
 ---
 
-### Desafio 14
+## Desafio 14
 
 Sabemos que tanto as pessoas consumidoras quanto as empresas fornecedoras de produtos possuem países cadastrados. Logo, considerando o conjunto formado por essas pessoas e empresas, queremos saber quais são os cinco primeiros países distintos, em ordem alfabética, presentes nesse conjunto. Usando o banco `w3schools` como referência, monte uma query que exiba uma coluna, com o alias "**País**", que deve mostrar o nome do país.
 
 ---
 
-### Desafio 15
+## Desafio 15
 
 Crie uma procedure chamada `buscar_media_por_cargo` que recebe como parâmetro o nome de um cargo e em retorno deve mostrar a média salarial de todas as pessoas que possuem esse cargo. Usando o banco `hr` como referência, sua procedure deve retornar somente uma coluna, com o alias "**Média salarial**", que mostra a média salarial arredondada para duas casas decimais.
 
@@ -385,13 +385,13 @@ Chamando-a dessa forma, sua procedure deve retornar `5760.00` como média salari
 
 ---
 
-### Desafio 16
+## Desafio 16
 
 Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` no banco de dados `hr` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos já gravados no sistema relacionados a essa pessoa. Confirme que sua function retorna o valor `2` ao ser chamada passando uma pessoa funcionária cujo email é `"NKOCHHAR"`.
 
 ---
 
-### BÔNUS:
+## BÔNUS:
 
 ### Desafio 17
 
