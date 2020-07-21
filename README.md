@@ -316,11 +316,25 @@ Chamando-a dessa forma, sua procedure deve retornar `5760.00` como média salari
 
 Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` no banco de dados `hr` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos já gravados no sistema relacionados a essa pessoa. Confirme que sua function retorna o valor `2` ao ser chamada passando uma pessoa funcionária cujo email é `"NKOCHHAR"`.
 
+---
+
 ### BÔNUS:
 
-17. Usando a tabela `job_history` do banco `hr`, monte um relatório que exiba o `employee_id`, a sua data de início (`start_date`), no formato brasileiro "dd/mm/aaaa" e com o apelido de "Data Início", a sua data de saída (`end_date`), também no formato brasileiro "dd/mm/aaaa" e com o apelido de "Data Rescisão", e, finalmente, calcule os anos trabalhados (apelidado de "Anos trabalhados") usando como base as datas de saída e entrada, arredondadas para as duas casas decimais. Ordene seus resultados pelo `employee_id`. Sua query deve produzir 11 resultados.
+### Desafio 17
 
-    ![test17](images/test17.png)
+Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo. Para isso, usando o banco `hr` como referência, monte uma query que exiba quatro colunas:
+
+1. A primeira coluna deve possuir o alias "**Nome completo**" e exibir o **nome completo** da pessoa empregada (não se esqueça do espaço entre o nome e o sobrenome).
+
+2. A segunda coluna deve possuir o alias "**Data de início**" e exibir a data que a pessoa iniciou o cargo, no formato brasileiro (`dd/mm/aaaa`). Ou seja, se a pessoa iniciou o cargo em questão no dia 2 de janeiro de 1990, sua data de início deveria ser `02/01/1990`.
+
+3. A terceira coluna deve possuir o alias "**Data de rescisão**" e exibir a data que a pessoa saiu do cargo, no formato brasileiro (`dd/mm/aaaa`). Ou seja, se a pessoa saiu do cargo em questão no dia 3 de setembro de 1995, sua data de rescisão deveria ser `03/09/1995`.
+
+4. A quarta coluna deve possuir o alias "**Anos trabalhados**" e exibir, usando como base as datas de saída e entrada, os anos que a pessoa ficou no cargo em questão, arredondados para duas casas decimais.
+
+Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em ordem alfabética. Em caso de empate no nome completo, ordene os resultados pelos anos trabalhados por ela no cargo em questão, em ordem crescente.
+
+---
 
 18. Crie uma function chamada `ExibirQuantidadePessoasContratadasPorMesEAno` que recebe dois parâmetros: `mes` (sem acento) e `ano`, ambos do tipo `INT`. A function deve ir até a tabela `employees` do banco `hr` e retornar a **quantidade de funcionários** que foram contratados (`hire_date`) dentro do `mes` e `ano` informados. Sua function deverá retornar o resultado **14**, ao ser executada com os parâmetros **mês 6 e ano 1987**.
 
