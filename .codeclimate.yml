@@ -35,3 +35,9 @@ plugins:
     enabled: true
   fixme:
     enabled: true
+exclude_patterns:
+  - "hr.sql"
+  - "w3schools.sql"
+  - "images/"
+  - "node_modules/"
+  - "tests/"
