@@ -147,11 +147,11 @@ MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
 
 ## Desafio 1
 
-Foi decidido que vamos continuar atendendo apenas à região `"Europa"`. Sendo assim, usando o banco `hr` como referência, precisamos de um relatório que deve apresentar duas colunas:
+Foi decidido que vamos continuar atendendo apenas à região `"Europe"`. Sendo assim, usando o banco `hr` como referência, precisamos de um relatório que deve apresentar duas colunas:
 
 1. A primeira coluna deve possuir o alias "**País**" e exibir o nome do país.
 
-2. A segunda coluna deve possuir o alias "**Status Inclusão**" e deve exibir `"incluído"` se o país em questão está incluso na `"Europa"`, ou `"não incluído"`, caso contrário.
+2. A segunda coluna deve possuir o alias "**Status Inclusão**" e deve exibir `"incluído"` se o país em questão está incluso em `"Europe"`, ou `"não incluído"`, caso contrário.
 
 Os resultados devem estar ordenados pelo nome do país em ordem alfabética.
 
@@ -253,7 +253,7 @@ Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**
 
 2. A segunda coluna deve possuir o alias "**Data de início**" e exibir a data que a pessoa iniciou o cargo.
 
-3. A terceira coluna deve possuir o alias "**Salário**" e exibir o salário que a pessoa teve para aquele cargo.
+3. A terceira coluna deve possuir o alias "**Salário**" e exibir o salário da pessoa.
 
 Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em ordem alfabética. Em caso de empate no nome completo, ordene os resultados pela data de início que a pessoa iniciou seu cargo, em ordem crescente.
 
