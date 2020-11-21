@@ -389,11 +389,19 @@ Chamando-a dessa forma, sua procedure deve retornar `5760.00` como média salari
 
 Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` no banco de dados `hr` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos **presentes em seu histórico**. Confirme que sua função retorna o valor `2` ao ser chamada passando uma pessoa funcionária cujo email é `"NKOCHHAR"`.
 
+## Desafio 17
+
+Crie uma TRIGGER que, a cada nova inserção realizada na tabela `orders`, insira automaticamente a data atual na coluna `OrderDate`. Em seguida teste a funcionalidade da trigger: 
+
+- insira na tabela `orders`um novo registro com os dados: `CustomerID` com valor 4, `EmployeeID` com valor 2 e `ShipperID` com valor 2;
+
+- monte uma query que mostre todos os `CustomerID` igual a 4.
+
 ---
 
 ## BÔNUS:
 
-### Desafio 17
+### Desafio 18
 
 Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo. Para isso, usando o banco `hr` como referência, monte uma query que exiba quatro colunas:
 
@@ -409,13 +417,13 @@ Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em
 
 ---
 
-### Desafio 18
+### Desafio 19
 
 Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano. Confirme que sua função retorna o valor `14` ao ser chamada passando os números `6` e `1987` para mês e ano, respectivamente.
 
 ---
 
-### Desafio 19
+### Desafio 20
 
 Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. Logo, crie uma procedure chamada `exibir_historico_completo_por_funcionario` que, dado o e-mail de uma pessoa funcionária, retorna todos os cargos em seu histórico. Sua procedure deve retornar três colunas:
 

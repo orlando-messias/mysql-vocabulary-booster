@@ -135,7 +135,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo', () => {
+  describe('Crie uma TRIGGER que, a cada nova inserção realizada na tabela `orders`, insira automaticamente a data atual na coluna `OrderDate`.', () => {
     it('Verifica o desafio 17', async () => {
       const challengeQuery = readFileSync('desafio17.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult17');
@@ -144,9 +144,18 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano', () => {
+  describe('Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo', () => {
     it('Verifica o desafio 18', async () => {
       const challengeQuery = readFileSync('desafio18.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult18');
+
+      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
+
+  describe('Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano', () => {
+    it('Verifica o desafio 19', async () => {
+      const challengeQuery = readFileSync('desafio19.sql', 'utf8').trim();
       const createFunctionQuery = /CREATE FUNCTION.*END/si.exec(challengeQuery)[0];
 
       await sequelize.query(createFunctionQuery);
@@ -156,21 +165,21 @@ describe('Desafios iniciais', () => {
         { type: 'SELECT' },
       );
 
-      const expectedResult = require('./challengesResults/challengeResult18');
+      const expectedResult = require('./challengesResults/challengeResult19');
 
       expect(result).toEqual(expectedResult);
     });
   });
 
   describe('Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. Logo, crie uma procedure chamada `exibir_historico_completo_por_funcionario` que, dado o e-mail de uma pessoa funcionária, retorna todos os cargos em seu histórico', () => {
-    it('Verifica o desafio 19', async () => {
-      const challengeQuery = readFileSync('desafio19.sql', 'utf8').trim();
+    it('Verifica o desafio 20', async () => {
+      const challengeQuery = readFileSync('desafio20.sql', 'utf8').trim();
       const createProcedureQuery = /CREATE PROCEDURE.*END/si.exec(challengeQuery)[0];
 
       await sequelize.query(createProcedureQuery);
 
       const result = await sequelize.query('CALL exibir_historico_completo_por_funcionario(\'NKOCHHAR\');');
-      const expectedResult = require('./challengesResults/challengeResult19');
+      const expectedResult = require('./challengesResults/challengeResult20');
 
       expect(result).toEqual(expectedResult);
     });

@@ -1,14 +1,5 @@
-const challengeResult19 = [
-  {
-    'Nome completo': 'Neena Kochhar',
-    'Departamento': 'Accounting',
-    'Cargo': 'Accounting Manager'
-  },
-  {
-    'Nome completo': 'Neena Kochhar',
-    'Departamento': 'Accounting',
-    'Cargo': 'Public Accountant'
-  }
+const challengeResult18 = [
+  { total: 14 }
 ];
 
-module.exports = challengeResult19;
+module.exports = challengeResult18;
