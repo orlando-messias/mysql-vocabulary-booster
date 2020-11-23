@@ -1,1 +1,1 @@
-select CustomerID, EmployeeID, OrderDate, ShipperID from w3schools.orders where CustomerID = 4;
+SELECT CustomerID, EmployeeID, OrderDate, ShipperID FROM w3schools.orders WHERE CustomerID = 4;

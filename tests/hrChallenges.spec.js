@@ -140,8 +140,8 @@ describe('Desafios iniciais', () => {
     it('Verifica o desafio 17', async () => {
       const challengeQuery = readFileSync('desafio17.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult17');
-
-      expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
+      console.log(challengeQuery);
+      expect(await sequelize.query(challengeQuery.toString(), { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
 
