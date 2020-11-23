@@ -10,13 +10,7 @@ const challengeResult17 = [
     'EmployeeID': '8',
     'OrderDate': '1996-12-16',
     'ShipperID': '3'
-  },
-  {
-    'CustomerID': '4',
-    'EmployeeID': '2',
-    'OrderDate': new Date().toLocaleDateString('en-US', { timeZone: 'UTC' }).toString().replaceAll('/', '-'),
-    'ShipperID': '2'
-  },
+  }
 ];
 
 module.exports = challengeResult17;
