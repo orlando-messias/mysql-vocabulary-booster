@@ -1,0 +1,1 @@
+SELECT CustomerID, EmployeeID, OrderDate, ShipperID FROM w3schools.orders WHERE CustomerID = 4;
