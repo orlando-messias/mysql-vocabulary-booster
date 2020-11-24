@@ -1,6 +1,7 @@
 const { readFileSync } = require('fs');
 const { Sequelize } = require('sequelize');
 const Importer = require('mysql-import');
+require('dotenv/config');
 
 describe('Desafios iniciais', () => {
   let sequelize;
@@ -84,4 +85,14 @@ describe('Desafios iniciais', () => {
       expect(await sequelize.query(challengeQuery, { type: 'SELECT' })).toEqual(expectedResult);
     });
   });
+
+  describe('Crie uma TRIGGER que, a cada nova inserção realizada na tabela `orders`, insira automaticamente a data atual na coluna `OrderDate`.', () => {
+    it('Verifica o desafio 17', async () => {
+      const challengeQuery = readFileSync('desafio17.sql', 'utf8').trim();
+      const expectedResult = require('./challengesResults/challengeResult17');
+      console.log(challengeQuery);
+      expect(await sequelize.query(challengeQuery.toString(), { type: 'SELECT' })).toEqual(expectedResult);
+    });
+  });
+
 });

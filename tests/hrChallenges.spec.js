@@ -136,14 +136,7 @@ describe('Desafios iniciais', () => {
   //   });
   // });
 
-  describe('Crie uma TRIGGER que, a cada nova inserção realizada na tabela `orders`, insira automaticamente a data atual na coluna `OrderDate`.', () => {
-    it('Verifica o desafio 17', async () => {
-      const challengeQuery = readFileSync('desafio17.sql', 'utf8').trim();
-      const expectedResult = require('./challengesResults/challengeResult17');
-      console.log(challengeQuery);
-      expect(await sequelize.query(challengeQuery.toString(), { type: 'SELECT' })).toEqual(expectedResult);
-    });
-  });
+  
 
   // describe('Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo', () => {
   //   it('Verifica o desafio 18', async () => {
