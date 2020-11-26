@@ -401,7 +401,7 @@ Suponha que haja somente 03 pessoas funcionárias, `João`, `Maria` e `Alex`, e:
 
 Logo, podemos dizer que `João` tem uma pessoa funcionária associada, `Maria`, que possui o mesmo cargo. Também podemos dizer que `Maria` tem uma pessoa funcionária associada, `João`, que possui o mesmo cargo. Já `Alex` não tem outra pessoa funcionária associada com o mesmo cargo. Portanto, seu relatório deveria ter dois resultados, um indicando que `Maria` tem uma pessoa associada `João` que possui o mesmo cargo, e o outro resultado indicando que `João` tem uma pessoa associada `Maria` que possui o mesmo cargo.
 
-Monte uma query que exiba seis colunas:
+Monte uma query que exiba 06 colunas:
 
 1. A primeira deve possuir o alias "**Nome completo funcionário 1**" e exibir o **nome completo** da pessoa funcionária (não se esqueça do espaço entre o nome e o sobrenome).
 
@@ -427,7 +427,7 @@ Exiba todos os produtos **que já tiveram um pedido associado requerindo uma qua
 
 >Use o banco `w3schools` como referência
 
-Monte uma query que exiba duas colunas:
+Monte uma query que exiba 02 colunas:
 
 1. A primeira deve possuir o alias "**Produto**" e exibir o nome do produto.
 
